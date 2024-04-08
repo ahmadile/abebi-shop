@@ -1,4 +1,4 @@
 // vite.config.js
 export default {
-    base:"/abebi-chop/",
+    base:"/abebi-shop/",
   }
