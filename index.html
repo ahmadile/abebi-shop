@@ -6,43 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
-  <body class="mt-12 mr-0 mb-0 ml-0 font-body text-normal text-dark-color leading-7 font-medium">
-    <!-- class="l-header" id="header" -->
-    <header>
-        <!-- class="nav bd-grid" -->
-      <nav class="max-w-screen-lg grid grid-cols-1 gap-8 w bg-white">
-          <!-- class="nav__toggle" -->
-          <div  id="nav-toggle">
-            <!-- <i class="bx bxs-grid"></i> -->
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
-            </svg>
-          </div>
-          <!-- class="nav__logo" -->
-         <a href="#">Roby</a>
-         <!-- class="nav__menu -->
-        <div id="nav__menu">
+  <body
+    class="mt-12 mr-0 mb-0 ml-0 font-body text-normal text-dark-color leading-7 font-medium"
+  >
+    <div class="absolute bottom-4 left-4">
+      <span class="sm:hidden">XS</span>
+      <span class="hidden sm:block md:hidden">SM</span>
+      <span class="hidden md:block lg:hidden">MD</span>
+      <span class="hidden lg:block xl:hidden">LG</span>
+    </div>
+    <!-- class="l-header"  -->
+    <header
+      class="w-full fixed top-0 left-0 z-z-fixed bg-dark-color-lighten"
+      id="header"
+    >
+      <!-- class="nav bd-grid" -->
+      <nav
+        class="max-w-screen-lg  gap-8 px-2 ml-4 mr-4 flex items-center justify-between h-12"
+      >
+        <!-- class="nav__toggle" -->
+        <div id="nav-toggle" class="text-fz cursor-pointer ">
+          <!-- <i class="bx bxs-grid"></i> -->
+          <svg class="h-6 w-6 text-slate-900"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="5" cy="5" r="1" />  <circle cx="12" cy="5" r="1" />  <circle cx="19" cy="5" r="1" />  <circle cx="5" cy="12" r="1" />  <circle cx="12" cy="12" r="1" />  <circle cx="19" cy="12" r="1" />  <circle cx="5" cy="19" r="1" />  <circle cx="12" cy="19" r="1" />  <circle cx="19" cy="19" r="1" /></svg>
+        </div>
+        <!-- class="nav__logo" -->
+        <a href="#" class="font-semibold">Roby</a>
+        <!-- class="nav__menu -->
+        <div id="nav-menu" class="screen ">
           <!-- class="nav__list" -->
           <ul>
             <!-- class="nav__item" class="nav__link" -->
-            <li><a href="#home" >Home</a></li>
-            <li><a href="#featured" >Featured</a></li>
-            <li><a href="#women" >Women</a></li>
-            <li><a href="#new" >New</a></li>
-            <li><a href="#shop" >Shop</a></li>
+            <li class="mb-8"><a href="#home" class="active">Home</a></li>
+            <li class="mb-8"><a href="#featured" >Featured</a></li>
+            <li class="mb-8"><a href="#women" >Women</a></li>
+            <li class="mb-8"><a href="#new" >New</a></li>
+            <li class="mb-8"><a href="#shop" >Shop</a></li>
           </ul>
         </div>
         <!-- class="nav_shop" -->
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+        <div class="text-fz cursor-pointer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
+            />
           </svg>
         </div>
       </nav>
     </header>
+   
     <!-- class="l-header" -->
     <main>
-      
+      <!-- class="home" -->
+      <section  id="home" class="bg-dark-color-lighten overflow-hidden">
+        <!-- class="home__container bd-grid" -->
+        <div class="h-[calc(100vh-3rem)]">
+          <!-- class="home__sneaker" -->
+          <div class="relative flex justify-center self-center">
+            <!-- class="home__shape" -->
+            <div class="w-56 h-56 bg-dark-color rounded-full"></div>
+            <!-- class="home__img" -->
+              <img src="src\image\imghome.png" alt="" class="absolute top-6 max-w-screen-sm w-72 -rotate-rotate-img " >
+            </div>
+            <!-- class="home__data"  -->
+        <div >
+          <!-- span: class="home__new" -->
+          <span class="block text-smaller font-semibold mb-4">New in</span>
+          <!-- class="home__title" -->
+        <h1 class="text-bigger mb-2">YEEZY BOOST<br>SPLY - 350</h1>
+        <!-- class="home__description" -->
+        <p class="mb-12">Expore les nouvelles collection</p>
+        <!-- class="button" -->
+        <a href="#" >Expore maintenent</a>
+        </div>
+      </div>
+      </section>
     </main>
     <script type="module" src="/main.js"></script>
   </body>

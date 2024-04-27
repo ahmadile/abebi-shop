@@ -146,3 +146,21 @@ right: 0;
 margin: auto;
 background-color:var(text-dark-color) ;
 }
+.nav{
+  @apply flex content-between items-center h-12
+}
+.screen{
+  @apply max-md:fixed max-md:top-12 max-md:-left-full max-md:w-8/12 max-md:h-screen max-md:p-8 max-md:bg-white-color max-md:duration-500
+}
+.show{
+  @apply left-0
+}
+.active{
+  @apply relative
+}
+.active{
+  @apply before:absolute before:-bottom-2 before:left-2/4 before:w-1 before:h-1 before:bg-dark-color before:rounded-lg
+}
+.scroll-header{
+  @apply bg-white-color shadow-black shadow-md
+}
