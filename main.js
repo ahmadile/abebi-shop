@@ -28,19 +28,21 @@ function scrollActive(){
     sections.forEach(current=>{
         const sectionHeight = current.offsetHeight
         const sectionTop = current.offsetTop - 50;
-        sectionId=current.getAttribute('id')
+       const sectionId=current.getAttribute('id')
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('#nav__menu a[href*='+sectionId+']').classList.add('active')
+            document.querySelector('#nav-menu a[href*='+sectionId+']').classList.add('active')
+            
         }else{
-            document.querySelector('#nav__menu a[href*='+sectionId+']').classList.remove('active')
+            document.querySelector('#nav-menu a[href*='+sectionId+']').classList.remove('active')
 
         }
     })
 }
 window.onscroll=()=>{
     const nav = document.getElementById('header')
-    if(this.scrollY>=200){
+    
+    if(scrollY>=200){
         nav.classList.add('scroll-header')
     }else{
         nav.classList.remove('scroll-header')

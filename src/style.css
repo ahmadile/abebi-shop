@@ -5,128 +5,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-    @font-face {
 
-
-        .montserrat {
-            font-family: "Montserrat", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 100;
-            font-style: normal;
-          }
-          
-        .poppins-thin {
-            font-family: "Poppins", sans-serif;
-            font-weight: 100;
-            font-style: normal;
-          }
-          
-          .poppins-extralight {
-            font-family: "Poppins", sans-serif;
-            font-weight: 200;
-            font-style: normal;
-          }
-          
-          .poppins-light {
-            font-family: "Poppins", sans-serif;
-            font-weight: 300;
-            font-style: normal;
-          }
-          
-          .poppins-regular {
-            font-family: "Poppins", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-          }
-          
-          .poppins-medium {
-            font-family: "Poppins", sans-serif;
-            font-weight: 500;
-            font-style: normal;
-          }
-          
-          .poppins-semibold {
-            font-family: "Poppins", sans-serif;
-            font-weight: 600;
-            font-style: normal;
-          }
-          
-          .poppins-bold {
-            font-family: "Poppins", sans-serif;
-            font-weight: 700;
-            font-style: normal;
-          }
-          
-          .poppins-extrabold {
-            font-family: "Poppins", sans-serif;
-            font-weight: 800;
-            font-style: normal;
-          }
-          
-          .poppins-black {
-            font-family: "Poppins", sans-serif;
-            font-weight: 900;
-            font-style: normal;
-          }
-          
-          .poppins-thin-italic {
-            font-family: "Poppins", sans-serif;
-            font-weight: 100;
-            font-style: italic;
-          }
-          
-          .poppins-extralight-italic {
-            font-family: "Poppins", sans-serif;
-            font-weight: 200;
-            font-style: italic;
-          }
-          
-          .poppins-light-italic {
-            font-family: "Poppins", sans-serif;
-            font-weight: 300;
-            font-style: italic;
-          }
-          
-          .poppins-regular-italic {
-            font-family: "Poppins", sans-serif;
-            font-weight: 400;
-            font-style: italic;
-          }
-          
-          .poppins-medium-italic {
-            font-family: "Poppins", sans-serif;
-            font-weight: 500;
-            font-style: italic;
-          }
-          
-          .poppins-semibold-italic {
-            font-family: "Poppins", sans-serif;
-            font-weight: 600;
-            font-style: italic;
-          }
-          
-          .poppins-bold-italic {
-            font-family: "Poppins", sans-serif;
-            font-weight: 700;
-            font-style: italic;
-          }
-          
-          .poppins-extrabold-italic {
-            font-family: "Poppins", sans-serif;
-            font-weight: 800;
-            font-style: italic;
-          }
-          
-          .poppins-black-italic {
-            font-family: "Poppins", sans-serif;
-            font-weight: 900;
-            font-style: italic;
-          }
-          
-          
-    }
-}
 a{
     @apply text-dark-color;
 }
@@ -136,16 +15,18 @@ a{
 .section-title{
     @apply relative text-big mb-4 text-center tracking-widest
 }
-.section-title::after{
-content: '';
+.section-title{
+  @apply after:absolute after:w-14 after:h-0.5 after:-top-4  after:left-0 after:right-0 after:m-auto after:bg-dark-color
+
+}
+/* content: '';
 position: absolute;
 width: 56px;
 height: .18rem;
 left: 0;
 right: 0;
 margin: auto;
-background-color:var(text-dark-color) ;
-}
+background-color:var(text-dark-color) ; */
 .nav{
   @apply flex content-between items-center h-12
 }
@@ -162,5 +43,29 @@ background-color:var(text-dark-color) ;
   @apply before:absolute before:-bottom-2 before:left-2/4 before:w-1 before:h-1 before:bg-dark-color before:rounded-lg
 }
 .scroll-header{
-  @apply bg-white-color shadow-black shadow-md
+  @apply bg-white-color  shadow-black
 }
+
+#audio-player {
+  @apply w-full max-w-md rounded-lg shadow-lg bg-white;
+}
+#audio-player::-webkit-media-controls-play-button {
+  @apply bg-gray-200 rounded-full;
+}
+/* .featured__container{
+  @apply gap-8 grid-cols-[repeat(auto-fit,minmax(220px,1fr))]
+} */
+
+
+
+
+
+/* .nail{
+  @apply absolute bottom-12 left-2/4 w-max z-z-fixed flex gap-20
+}
+.item{
+  @apply w-36 h-56 flex-shrink-0 relative
+}
+.item-img{
+  @apply w-full h-full object-cover
+} */
