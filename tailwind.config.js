@@ -55,7 +55,7 @@ export default {
         'aut':'10px'
       },
       backgroundImage: {
-        'fay': "url('/abebi-shop/src/image/fay2.jpg')",
+        'fay': "url('src/image/fay2.jpg')",
         'footer-texture': "url('/img/footer-texture.png')",
       }
       
